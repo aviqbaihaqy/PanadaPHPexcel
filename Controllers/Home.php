@@ -9,7 +9,7 @@ class Home extends Resources\Controller{
     }
 	
     public function index($pages='import'){
-        $data['title'] = 'Hello world!';
+        $data['title'] = 'Panada Tutorial';
 		$data['halaman']= (file_exists(TEMPLATE.$pages.'.php')) ? $pages : '404';
 		$this->output('default/template', $data);
 		//var_dump($data);

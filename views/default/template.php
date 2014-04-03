@@ -16,10 +16,6 @@
 	<!-- Page-Level Plugin CSS - Tables -->
     <link href="<?php echo $this->uri->baseUri;?>assets/default/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
 	
-    <!-- Page-Level Plugin CSS - Dashboard -->
-    <link href="<?php echo $this->uri->baseUri;?>assets/default/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
-    <link href="<?php echo $this->uri->baseUri;?>assets/default/css/plugins/timeline/timeline.css" rel="stylesheet">
-
     <!-- SB Admin CSS - Include with every page -->
     <link href="<?php echo $this->uri->baseUri;?>assets/default/css/sb-admin.css" rel="stylesheet">
 	
@@ -298,10 +294,6 @@
 	<script src="<?php echo $this->uri->baseUri;?>assets/default/js/plugins/dataTables/dataTables.editor.bootstrap.js" ></script>
 	<script src="<?php echo $this->uri->baseUri;?>assets/default/js/plugins/dataTables/jquery.dataTables.rowGrouping.js" ></script>
 	<script src="<?php echo $this->uri->baseUri;?>assets/default/js/plugins/dataTables/jquery.dataTables.columnFilter.js" ></script>
-
-    <!-- Page-Level Plugin Scripts - Dashboard -->
-    <script src="<?php echo $this->uri->baseUri;?>assets/default/js/plugins/morris/raphael-2.1.0.min.js"></script>
-    <script src="<?php echo $this->uri->baseUri;?>assets/default/js/plugins/morris/morris.js"></script>
 
     <!-- SB Admin Scripts - Include with every page -->
     <script src="<?php echo $this->uri->baseUri;?>assets/default/js/sb-admin.js"></script>
