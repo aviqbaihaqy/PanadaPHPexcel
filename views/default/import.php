@@ -3,8 +3,8 @@
 		<div class="col-lg-12">
 			<h3 class="page-header">Import From Excel</h3>
 
-			<div id="alert" class="alert hide">
-				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+			<div id="alert" class="alert alert-dismissable hide">
+				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 			</div>
 
 			<form id="f_import" class="form-horizontal" action="<?= $this->location('import/upload') ?>" enctype="multipart/form-data" method="post" rel="create">
@@ -81,11 +81,11 @@
 				contentType: false, // Set content type to false as jQuery will tell the server its a query string request
 				success: function(data, textStatus, jqXHR){
 					if(typeof data.message.success != 'undefined'){
-						$("div#alert").removeClass("alert-error").addClass("alert-success").show().html('<strong>Success</strong> '+data.message.success);
+						$("div#alert").removeClass("alert-danger").addClass("alert-success").show().html('<strong>Success</strong> '+data.message.success);
 						dataTables(data);
 					}
 					else{
-						$("div#alert").removeClass("alert-success").addClass("alert-error").show().html('<strong>Error</strong> '+data.message.error);
+						$("div#alert").removeClass("alert-success").addClass("alert-danger").show().html('<strong>Error</strong> '+data.message.error);
 					}
 				},
 				error: function(jqXHR, textStatus, errorThrown){

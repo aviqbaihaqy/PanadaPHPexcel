@@ -286,7 +286,7 @@
     <script src="<?php echo $this->uri->baseUri;?>assets/default/js/plugins/metisMenu/jquery.metisMenu.js"></script>
 	
 	<!-- Page-Level Plugin Scripts - Tables -->
-    <script src="<?php echo $this->uri->baseUri;?>assets/default/js/plugins/dataTables/jquery.dataTables.min.js"></script>
+    <script src="<?php echo $this->uri->baseUri;?>assets/default/js/plugins/dataTables/jquery.datatables.min.js"></script>
 	<script src="<?php echo $this->uri->baseUri;?>assets/default/js/plugins/dataTables/ZeroClipboard.js" ></script>
 	<script src="<?php echo $this->uri->baseUri;?>assets/default/js/plugins/dataTables/TableTools.js" ></script>
 	<script src="<?php echo $this->uri->baseUri;?>assets/default/js/plugins/dataTables/dataTables.editor.js" ></script>
