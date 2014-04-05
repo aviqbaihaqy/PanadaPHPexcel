@@ -3,7 +3,7 @@
 		<div class="col-lg-12">
 			<h3 class="page-header">Import From Excel</h3>
 
-			<div id="alert" class="alert alert-dismissable hide">
+			<div id="alert" class="alert ">
 				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 			</div>
 
@@ -61,6 +61,7 @@
 		$('form').ajaxStop(function(){
 			$("#import_submit").button('reset');
 		});
+		$("div#alert").hide();
 		
 		// Catch the form submit and upload the files
 		function uploadFiles(event){
@@ -81,15 +82,15 @@
 				contentType: false, // Set content type to false as jQuery will tell the server its a query string request
 				success: function(data, textStatus, jqXHR){
 					if(typeof data.message.success != 'undefined'){
-						$("div#alert").removeClass("alert-danger").addClass("alert-success").show().html('<strong>Success</strong> '+data.message.success);
+						$("div#alert").removeClass("alert-danger").addClass("alert-success alert-dismissable").show().html('<strong>Success</strong> '+data.message.success);
 						dataTables(data);
 					}
 					else{
-						$("div#alert").removeClass("alert-success").addClass("alert-danger").show().html('<strong>Error</strong> '+data.message.error);
+						$("div#alert").removeClass("alert-success").addClass("alert-danger alert-dismissable").show().html('<strong>Error</strong> '+data.message.error);
 					}
 				},
 				error: function(jqXHR, textStatus, errorThrown){
-					$("div#alert").removeClass("alert-success").addClass("alert-error").show().html('<strong>Error</strong> '+ errorThrown);
+					$("div#alert").removeClass("alert-success").addClass("alert-danger alert-dismissable").show().html('<strong>Error</strong> '+ errorThrown);
 				}
 			});
 		}
